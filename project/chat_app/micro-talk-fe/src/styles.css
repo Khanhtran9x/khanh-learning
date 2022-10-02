@@ -1,0 +1,78 @@
+body {
+  background-color: white;
+}
+
+.btn-main {
+  background: #3390ec;
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.chat-user-display {
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.chat-area {
+  margin: 0px 5px;
+  padding: 10px 5px;
+  height: 95vh;
+}
+
+.chat-history {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.user-name {
+  font-size: 18px;
+}
+
+.normal-text {
+  font-size: 15px;
+}
+
+.avatar_rounded {
+  border-radius: 50%;
+}
+
+.chat-msg {
+  background-color: #9c2380;
+  border-radius: 5px;
+  padding: 5px 0;
+  width: auto;
+  display:block;
+}
+
+.chat-text {
+  color: white;
+}
+
+.chat-sending-container {
+  background-color: #54a5dc;
+  overflow:hidden;
+  border-radius: 5px;
+  padding: 5px 7px;
+  width: max-content;
+  max-width: 50%;
+}
+.chat-sending-msg{
+  display:inline-block;
+  color: white;
+}
+
+.chat-receiving-container {
+  background-color: #282faf;
+  overflow:hidden;
+  border-radius: 5px;
+  padding: 5px 7px;
+  width: max-content;
+  max-width: 50%;
+}
+.chat-receiving-msg{
+  display:inline-block;
+  color: white;
+}
