@@ -1,0 +1,18 @@
+docker build --build-arg JAR_FILE=build/libs/com-0.0.1-SNAPSHOT.jar -t internetapp .
+
+gradlew build
+
+docker-compose up -d
+
+docker run -d `
+     --network exam-spring --network-alias mysql `
+     -v codegym-mysql-data:/var/lib/mysql `
+     -e MYSQL_ROOT_PASSWORD=secret `
+     -e MYSQL_DATABASE=exam_module5 `
+     mysql:5.7
+
+docker exec -it ecceda7ae9e9 mysql -u root -p
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+
+5d8d3e4eb1a5
