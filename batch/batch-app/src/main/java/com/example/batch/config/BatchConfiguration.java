@@ -6,6 +6,7 @@ import javax.sql.DataSource;
 import com.example.batch.utils.JobCompletionNotificationListener;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.configuration.annotation.DefaultBatchConfigurer;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
@@ -24,7 +25,7 @@ import org.springframework.core.io.ClassPathResource;
 
 @Configuration
 @EnableBatchProcessing
-public class BatchConfiguration {
+public class BatchConfiguration extends DefaultBatchConfigurer {
 
     @Autowired
     public JobBuilderFactory jobBuilderFactory;
@@ -34,6 +35,11 @@ public class BatchConfiguration {
 
     @Value("${file.input}")
     private String fileInput;
+
+    @Override
+    public void setDataSource(DataSource dataSource) {
+        super.setDataSource(null);
+    }
 
     @Bean
     public FlatFileItemReader<Coffee> reader() {
