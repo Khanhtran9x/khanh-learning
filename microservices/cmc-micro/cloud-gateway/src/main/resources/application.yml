@@ -15,8 +15,7 @@ spring:
             - name: CircuitBreaker
               args:
                 name: USER-SERVICE
-                fallbackUri: forward:/userServiceFallBack
-
+                fallbackuri: forward:/userServiceFallBack
         - id: DEPARTMENT-SERVICE
           uri: lb://DEPARTMENT-SERVICE
           predicates:
@@ -25,14 +24,8 @@ spring:
             - name: CircuitBreaker
               args:
                 name: DEPARTMENT-SERVICE
-                fallbackUri: forward:/departmentServiceFallBack
+                fallbackuri: forward:/departmentServiceFallBack
 
-eureka:
-  client:
-    service-url:
-      default-zone: http://localhost:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
 
 hystrix:
   command:
@@ -42,8 +35,10 @@ hystrix:
           thread:
             timeoutInMilliseconds: 4000
 
+
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: hystrix.stream
+
