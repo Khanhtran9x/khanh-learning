@@ -16,7 +16,7 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic topic1() {
-        return TopicBuilder.name("chat-app-1").build();
+        return TopicBuilder.name("chat-app-1").partitions(2).build();
     }
 
     @Bean
