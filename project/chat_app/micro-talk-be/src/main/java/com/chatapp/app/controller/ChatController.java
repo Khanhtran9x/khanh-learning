@@ -40,12 +40,12 @@ public class ChatController {
     private MessageService messageService;
 
     @GetMapping("/users")
-    public ResponseEntity<?> getAllUsers(Pageable pageable) {
-        Page<Customer> customers = customerService.getAllCustomers(pageable);
-        if (customers.isEmpty()) {
+    public ResponseEntity<?> getAllUsers() {
+        List<User> users = userService.getAll();
+        if (users.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(customers, HttpStatus.OK);
+        return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
     @GetMapping("/messages")
