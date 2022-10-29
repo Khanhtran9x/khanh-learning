@@ -17,7 +17,7 @@ const studentApi = {
     },
 
     update(data) {
-        const url = `/students/${data.id}`;
+        const url = `/students`;
         return axiosClient.put(url, data);
     },
 
