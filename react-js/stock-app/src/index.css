@@ -1,0 +1,89 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+* {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Header */
+
+.header-container {
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  position: sticky;
+  z-index: 999;
+  top: -10px;
+  border-bottom: 1px solid #e9dede;
+}
+
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-left: 15px;
+  margin-top: 13px;
+  font-weight: bold;
+}
+
+.navbar-logo {
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+.navbar-item-button {
+  margin-left: 15px;
+  font-weight: bold;
+}
+/* button */
+
+.giant-button {
+  color: rgb(255,255,255);
+  background: #0052ff;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+}
+
+.primary-button {
+  color: rgb(255,255,255);
+  background: #0052ff;
+  border-radius: 3px;
+  padding: 5px 15px;
+  border: none;
+}
+
+.primary-button:hover {
+  background: #1856dd;
+}
+
+/* title */
+
+.primary-title {
+  font-weight: bold;
+}
+
+.primary-content {
+  font-weight: bold;
+}
+
+.box-text {
+  margin-top: 100px;
+  margin-left: 130px;
+}
