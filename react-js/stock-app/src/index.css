@@ -49,6 +49,7 @@ code {
   margin-left: 15px;
   font-weight: bold;
 }
+
 /* button */
 
 .giant-button {
@@ -59,6 +60,10 @@ code {
   font-weight: bold;
   padding: 10px 25px;
   border: none;
+}
+
+.giant-button:hover {
+  background: #1856dd;
 }
 
 .primary-button {

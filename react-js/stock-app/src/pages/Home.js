@@ -1,7 +1,6 @@
 import { Button } from "bootstrap";
 import Header from "../components/Header";
 import phone from '../images/phone.png';
-import bitcoin from '../images/table-bitcoin.png';
 import MainStockList from "../components/MainStockList";
 
 const Home = () => {
