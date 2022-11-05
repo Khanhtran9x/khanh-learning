@@ -21,7 +21,7 @@ const Home = () => {
                 <h1 className="primary-title">ngay hôm nay</h1>
               </div>
               <div className="row mt-2">
-                <h5 className="primary-content">DreamX là một nền tảng đầu tư an toàn</h5>
+                <h5 className="primary-content">DreamX là một nền tảng đầu tư an toàn hàng đầu</h5>
               </div>
               <div className="row">
                 <h5 className="primary-content">Hãy đăng kí cho mình một tài khoản và bắt đầu</h5>

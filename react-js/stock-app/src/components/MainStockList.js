@@ -16,7 +16,7 @@ const MainStockList = () => {
           <tr>
             <th>1</th>
             <td>VNI</td>
-            <td>1000</td>
+            <td>1000đ</td>
             <td>2.12%</td>
             <td>@mdo</td>
             <td><button className="primary-button">Mua</button></td>
